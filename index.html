@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="twitter.css" />
+    <title>Twitter Clone</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="top-banner">
+        <!-- back arrow -->
+        <div id="back-arrow-container">
+          <svg id="back-arrow" role="button" viewBox="0 0 24 24">
+            <g>
+              <path
+                d="M7.414 13l5.043 5.04-1.414 1.42L3.586
+                    12l7.457-7.46 1.414 1.42L7.414 11H21v2H7.414z"
+              ></path>
+            </g>
+          </svg>
+        </div>
+        <div id="title">
+          <h3 class="display-name">
+            <!-- Account Owner Name -->
+            <!-- {Created by JS} -->
+            <!-- Blue Check -->
+          </h3>
+          <!-- Number of Tweets -->
+          <p id="tweet-count">21.3K Tweets</p>
+        </div>
+      </div>
+      <div class="entire-profile">
+        <div class="upper-profile">
+          <!-- Cover Image - Update -->
+          <img id="cover-image" src="#" alt="" />
+        </div>
+        <div class="lower-profile">
+          <div class="follow-me">
+            <!-- Profile Image - {avatarURL} -->
+            <img id="profile-image" src="#" alt="" />
+            <!-- Follow/Following Button -->
+            <div class="button-container">
+              <!-- More Button -->
+              <button type="submit" id="more-btn">
+                <svg id="more-dots" role="button" viewBox="0 0 24 24">
+                  <g>
+                    <path
+                      d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2
+                                2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2
+                                2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2
+                                2 .9 2 2 2z"
+                    ></path>
+                  </g>
+                </svg>
+              </button>
+              <!-- Follow Button -->
+              <button type="submit" class="follow-btn">Follow</button>
+            </div>
+          </div>
+          <div class="profile-text">
+            <div id="title">
+              <h3 class="display-name">
+                <!-- Account Owner Name -->
+                <!-- {Created by JS} -->
+                <!-- Blue Check -->
+                <svg id="twitter-verified" role="img" viewBox="0 0 24 24">
+                  <g>
+                    <path
+                      d="M22.25
+                                12c0-1.43-.88-2.67-2.19-3.34.46-1.39.2-2.9-.81-3.91s-2.52-1.27-3.91-.81c-.66-1.31-1.91-2.19-3.34-2.19s-2.67.88-3.33
+                                2.19c-1.4-.46-2.91-.2-3.92.81s-1.26 2.52-.8
+                                3.91c-1.31.67-2.2 1.91-2.2 3.34s.89 2.67 2.2
+                                3.34c-.46 1.39-.21 2.9.8 3.91s2.52 1.26
+                                3.91.81c.67 1.31 1.91 2.19 3.34 2.19s2.68-.88
+                                3.34-2.19c1.39.45 2.9.2
+                                3.91-.81s1.27-2.52.81-3.91c1.31-.67 2.19-1.91
+                                2.19-3.34zm-11.71 4.2L6.8 12.46l1.41-1.42 2.26
+                                2.26 4.8-5.23 1.47 1.36-6.2 6.77z"
+                    ></path>
+                  </g>
+                </svg>
+              </h3>
+              <!-- Handle -->
+              <p class="handle"><!-- {Created by JS} --></p>
+            </div>
+            <div class="location-link-joined">
+              <!-- location -->
+              <div class="location-link-joined-item" id="location-item"></div>
+
+              <!-- link -->
+              <div class="location-link-joined-item" id="link-item"></div>
+
+              <!-- joined date -->
+              <div class="location-link-joined-item" id="joined-item"></div>
+            </div>
+
+            <div class="following-container">
+              <!-- Number Following -->
+              <div class="following-data">
+                <!-- {followingCount} -->
+                <h6 id="following-count"></h6>
+                <p>Following</p>
+              </div>
+              <!-- Number of Followers -->
+              <div class="following-data">
+                <!-- {followerCount} -->
+                <h6 id="follower-count">121.2M</h6>
+                <p>Followers</p>
+              </div>
+            </div>
+            <!-- Followed by message -->
+            <p id="follow-matches">Not followed by anyone you're following</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- tweets navigation -->
+      <nav>
+        <div class="menu-items">
+          <p class="tweets-tab tab tab-active">Tweets</p>
+          <p class="replies-tab tab">Tweets & replies</p>
+          <p class="media-tab tab">Media</p>
+          <p class="likes-tab tab">Likes</p>
+        </div>
+      </nav>
+
+      <!-- Tweets -->
+      <!-- Inserted By JS -->
+      <div id="Tweets" class="tweets-section content-body show-active"></div>
+      <div id="Tweets & replies" class="tweets-replies-section content-body">
+        <p>Tweets and Replies Go Here</p>
+      </div>
+      <div id="Media" class="media-section content-body">
+        <p>Media Goes Here</p>
+      </div>
+      <div id="Likes" class="likes-section content-body">
+        <p>Likes Go Here</p>
+      </div>
+    </div>
+    <div class="user-btn-ctr">
+      <button id="elon" class="follow-btn" type="submit">Elon</button>
+      <button id="bill" class="follow-btn" type="submit">Bill</button>
+    </div>
+    <div class="user-btn-ctr">
+      <a target="_blank" href="https://twitter.com/elonmusk"
+        ><button id="realelon" class="follow-btn" type="submit">
+          Real Elon Twitter
+        </button></a
+      >
+      <a target="_blank" href="https://twitter.com/billgates"
+        ><button id="realbill" class="follow-btn" type="submit">
+          Real Bill Twitter
+        </button></a
+      >
+    </div>
+    <div class="user-btn-ctr">
+      <a href="timeline.html"
+        ><button id="timeline" class="follow-btn" type="submit">
+          Tweet Timeline
+        </button></a
+      >
+    </div>
+
+    <script src="twitter.js"></script>
+  </body>
+</html>
